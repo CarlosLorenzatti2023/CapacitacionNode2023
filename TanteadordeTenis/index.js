@@ -1,7 +1,7 @@
 function valorRandom(){
-    var min = 0;
-    var max = 100;
-    var x = Math.floor(Math.random()*(max-min)+min);
+    let min = 0;
+    let max = 100;
+    let x = Math.floor(Math.random()*(max-min)+min);
     return x;
 }
 
@@ -17,10 +17,12 @@ let diferencia = 0;
 
 while (!condicion){
     let numero = valorRandom();
+    //let numero = valorRandom(); funcion me diga quien gano el punto
     console.log(numero);
     
     if (numero <= 50){ // Segun cual jugador gano el punto vamos incrementando el contador de cada jugador.
         P1_points = P1_points + 1; //El contador de tantos del jugador 1
+        // poner bien nomenclatura pointP1
     }else{
         P2_points = P2_points + 1;  //El contador de tantos del jugador 2
     }
